@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="./mp1.css">
+    <script src="./mp1.js"></script>
+    </head>
+    <body>
+        <form name="SciCal">
+            <table id="t">
+                <tr>
+                    <td colspan="5"><input id="a" type="text" name="screen"></td>
+                </tr>
+                <tr>
+                    <td><input id="b" type="button" value="1" onclick="SciCal.screen.value+='1'"></td>
+                    <td><input id="b" type="button" value="2" onclick="SciCal.screen.value+='2'"></td>
+                    <td><input id="b" type="button" value="3" onclick="SciCal.screen.value+='3'"></td>
+                    <td><input id="d" type="button" value="DEL" onclick="bs(this.form)"></td>
+                    <td><input id="b" type="button" value="+" onclick="SciCal.screen.value+='+'"></td>
+                </tr>
+                <tr>
+                    <td><input id="b" type="button" value="4" onclick="SciCal.screen.value+='4'"></td>
+                    <td><input id="b" type="button" value="5" onclick="SciCal.screen.value+='5'"></td>
+                    <td><input id="b" type="button" value="6" onclick="SciCal.screen.value+='6'"></td>
+                    <td><input id="d" type="button" value="C" onclick="SciCal.screen.value=''"></td>
+                    <td><input id="b" type="button" value="-" onclick="SciCal.screen.value+='-'"></td>
+                </tr>
+                <tr>
+                    <td><input id="b" type="button" value="7" onclick="SciCal.screen.value+='7'"></td>
+                    <td><input id="b" type="button" value="8" onclick="SciCal.screen.value+='8'"></td>
+                    <td><input id="b" type="button" value="9" onclick="SciCal.screen.value+='9'"></td>
+                    <td><input id="b" type="button" value="x^y" onclick="SciCal.screen.value+='Math.pow('"></td>
+                    <td><input id="b" type="button" value="x" onclick="SciCal.screen.value+='*'"></td>
+                </tr>
+                <tr>
+                    <td><input id="b" type="button" value="." onclick="SciCal.screen.value+='.'"></td>
+                    <td><input id="b" type="button" value="0" onclick="SciCal.screen.value+='0'"></td>
+                    <td><input id="b" type="button" value="(" onclick="SciCal.screen.value+='('"></td>
+                    <td><input id="b" type="button" value=")" onclick="SciCal.screen.value+=')'"></td>
+                    <td><input id="b" type="button" value="÷" onclick="SciCal.screen.value+='/'"></td>
+                </tr>
+                <tr>
+                    <td><input id="b" type="button" value="sin" onclick="SciCal.screen.value+='Math.sin('"></td>
+                    <td><input id="b" type="button" value="cos" onclick="SciCal.screen.value+='Math.cos('"></td>
+                    <td><input id="b" type="button" value="tan" onclick="SciCal.screen.value+='Math.tan('"></td>
+                    <td><input id="b" type="button" value="e^" onclick="SciCal.screen.value+='Math.pow(Math.E,'"></td>
+                    <td><input id="b" type="button" value="ln" onclick="SciCal.screen.value+='Math.log('"></td>
+                </tr>
+                <tr>
+                    <td><input id="b" type="button" value="sin-1" onclick="SciCal.screen.value+='Math.asin('"></td>
+                    <td><input id="b" type="button" value="cos-1" onclick="SciCal.screen.value+='Math.acos('"></td>
+                    <td><input id="b" type="button" value="tan-1" onclick="SciCal.screen.value+='Math.atan('"></td>
+                    <td><input id="b" type="button" value="10^" onclick="SciCal.screen.value+='Math.pow(10,'"></td>
+                    <td><input id="b" type="button" value="log" onclick="SciCal.screen.value+='Math.log10('"></td>
+                </tr>
+                <tr>
+                    <td><input id="b" type="button" value="," onclick="SciCal.screen.value+=','"></td>
+                    <td><input id="b" type="button" value="e" onclick="SciCal.screen.value+='Math.E'"></td>
+                    <td><input id="b" type="button" value="∏" onclick="SciCal.screen.value+='Math.PI'"></td>
+                    <td><input id="b" type="button" value="=" onclick="find(this.form)"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
